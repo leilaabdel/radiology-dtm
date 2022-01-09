@@ -1,0 +1,4 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Radiology Dynamic Topic Modeling through COVID-19"
+theme = "ananke"

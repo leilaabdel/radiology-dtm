@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Select Element Demo</title>
+    <link href="css/selectbox.css" rel="stylesheet">
+</head>
+<body>
+    <form>
+        <label for="framework">Select a time period</label>
+        <select id="framework">
+            <option value="0">October 2018</option>
+            <option value="1">November 2018</option>
+            <option value="2">December 2018</option>
+            <option value="3">January 2019</option>
+            <option value="4">February 2019</option>
+            <option value="5">March 2019</option>
+            <option value="6">April 2019</option>
+            <option value="7">May 2019</option>
+            <option value="8">June 2019</option>
+            <option value="9">July 2019</option>
+            <option value="10">August 2019</option>
+            <option value="11">September 2019</option>
+            <option value="12">October 2019</option>
+            <option value="13">November 2019</option>
+            <option value="14">December 2019</option>
+            <option value="15">January 2020</option>
+            <option value="16">February 2020</option>
+            <option value="17">March 2020</option>
+            <option value="18">April 2020</option>
+            <option value="19">May 2020</option>
+            <option value="20">June 2020</option>
+            <option value="21">July 2020</option>
+            <option value="22">August 2020</option>
+            <option value="23">September 2020</option>
+            <option value="24">October 2020</option>
+            <option value="25">November 2020</option>
+            <option value="26">December 2020</option>
+            <option value="27">January 2021</option>
+            <option value="28">February 2021</option>
+            <option value="29">March 2021</option>
+            <option value="30">April 2021</option>
+            <option value="31">May 2021</option>
+            <option value="32">June 2021</option>
+            <option value="33">July 2021</option>
+            <option value="34">August 2021</option>
+            <option value="35">September 2021</option>
+        </select>
+        <button id="btn">Display topics</button>
+    </form>
+    <br>
+    <br>
+
+    <iframe id="myFrame" src="../files/FINAL-50-TOPICS-0-50.html" width=1250px height=800px></iframe>
+    <script>
+        const btn = document.querySelector('#btn');
+        const sb = document.querySelector('#framework')
+        btn.onclick = (event) => {
+          var source = "../files/FINAL-50-TOPICS-" + sb.selectedIndex + "-50.html";
+          event.preventDefault();
+          document.getElementById("myFrame").src = source ;
+            // show the selected index
+
+        };
+    </script>
+</body>
+</html>
